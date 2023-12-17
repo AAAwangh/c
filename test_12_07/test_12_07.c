@@ -1,23 +1,19 @@
-#include <stdio.h>
-#include <math.h>
-int main(void)
-{ // 寻找素数，并且每十个换一行
-    int a, i;
-    int n, m;
-    int cnt = 0;
-    scanf("%d %d", &m, &n);
-    for (i = m; i <= n; i++)
-    {
-        for (a = 2; a <= sqrt(i); a++)
-        {
-            if (i % a == 0 || i < 2)
-                break;
-        }
-        if (a > sqrt(i))
-        {
-            printf("%d", i);
-            cnt++;
-        }
-    }
-    return 0;
+int main()
+{
+	char arr1[] = "abcdefg";
+	char arr2[] = "abcdefg";
+ 
+	char* arr3 = "abcdefg";
+	char* arr4 = "abcdefg";
+ 
+	if (arr1 == arr2)
+		printf("arr1和arr2相等\n");
+	else
+		printf("arr1和arr2不相等\n");
+ 
+	if(arr3 == arr4)
+		printf("arr3和arr4相等\n");
+	else
+		printf("arr1和arr2不相等\n");
+	return 0;
 }
